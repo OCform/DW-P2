@@ -17,6 +17,7 @@ body {
   -ms-flex-wrap: nowrap; /* IE10 */
   flex-wrap: nowrap;
   padding: 0 4px;
+  gap: 10px;
 }
 
 /* Create two inequal columns that sits next to each other */
@@ -80,7 +81,7 @@ body {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
    }
   
   .colum-hebergement {
@@ -107,12 +108,37 @@ body {
 <div class="row-hebergement-populaire"> 
   <div class="colum-hebergement">
   	<section id="hebergement">
-    	<img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" style="width:100%; height:100%; object-fit:cover;">
+      <article class="card">
+        <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo Auberge la Cannebière" style="width:100%; height:100%; object-fit:cover;">
+      </article>
+      <article class="card">
+        <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo Hôte du port" style="width:100%; height:100%; object-fit:cover;">
+      </article>
+      <article class="card">
+        <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo Hôtel Les mouettes" style="width:100%; height:100%; object-fit:cover;">
+      </article>
+      <article class="card">
+        <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo Hôtel de la mer" style="width:100%; height:100%; object-fit:cover;">
+      </article>
+      <article class="card">
+        <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo Auberge Le Panier" style="width:100%; height:100%; object-fit:cover;">
+      </article>
+      <article class="card">
+        <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo Hôtel chez Amina" style="width:100%; height:100%; object-fit:cover;">
+      </article>    	
     </section>
   </div>
   <div class="colum-populaire">
   	<aside id="populaire">
-    	<img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width:100%; height:100%; object-fit:cover;">
+      <article class="card">
+        <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo Hôtel Le soleil du matin" style="width:100%; height:100%; object-fit:cover;">
+      </article>
+      <article class="card">
+        <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo Au cœur de l'eau Chambres d'hôtes" style="width:100%; height:100%; object-fit:cover;">
+      </article>
+      <article class="card">
+        <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo Hôtel Tout bleu et Blanc" style="width:100%; height:100%; object-fit:cover;">
+      </article>    	
     </aside>
   </div>  
 </div>

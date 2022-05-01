@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header-hebergement-section h2 {
+  text-align: left;
+  margin: 0 10px;
+  padding-left: 0px;
+}
+
+.row-hebergement-section {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 8px;
+  gap: 10px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-hebergement-section {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  max-width: 30%;
+  max-height: 626px;
+  padding: 0 5px;
+}
+
+.column-hebergement-section img {
+  margin-top: 18px;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media all and (max-width: 992px) {
+  .column-hebergement-section {
+    -ms-flex: 45%;
+    flex: 45%;
+    max-width: 45%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media all and (max-width: 768px) {
+  .column-hebergement-section {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header-hebergement-section">
+    <h2>Hébergements à Marseille</h2>
+</div>
+
+<!-- Photo Grid -->
+<div class="row-hebergement-section"> 
+  <div class="column-hebergement-section">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+  </div>
+  <div class="column-hebergement-section">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+  </div>  
+  <div class="column-hebergement-section">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>

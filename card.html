@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+<style>
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 25px 25px 0 0;  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  /*padding: 2px 16px;*/
+}
+
+.container h3, 
+.container p, 
+.container div.note {
+  margin: 5px 0;
+  padding: 0;
+}
+</style>
+</head>
+<body>
+
+<article class="card">
+    <picture>
+        <source media="(min-width:1440px)" srcset="./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"> 
+        <source media="(min-width:1024px) " srcset="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+        <source media="(min-width:768px)" srcset="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">                                   
+        <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de l'Auberge La Cannebière">
+    </picture>    
+  <div class="container">
+    <h3>Auberge La Cannebière</h3>
+    <p>Nuit à partir de <b><span class="bold">25€</span></b></p>
+    <div class="note" aria-label="Note : 4 sur 5" role="img">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star grey" style="color:#a0a0a0;"></i>
+    </div> 
+  </div>
+</article>
+
+</body>
+</html>
