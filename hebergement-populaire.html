@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/*ooo hebergement-populaire ooo*/
+.row-hebergement-populaire {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: nowrap; /* IE10 */
+  flex-wrap: nowrap;
+  padding: 0 4px;
+}
+
+/* Create two inequal columns that sits next to each other */
+.colum-hebergement {
+  -ms-flex: 880px; /* IE10 */
+  flex: 880px;
+  max-width: 880px;
+  max-height: 626px;
+  padding: 0 4px;
+}
+
+.colum-hebergement #hebergement {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;  
+  background-color: #f2f2f2;
+  border: 1px solid blue;
+}
+
+.colum-populaire {
+  -ms-flex: 420px; /* IE10 */
+  flex: 420px;
+  max-width: 420px;
+  max-height: 625px;
+  padding: 0 4px;
+}
+
+.colum-populaire #populaire {
+  margin-top: 8px;
+  vertical-align: middle;0
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  border: 1px solid red;
+}
+/*xxx hebergement-populaire xxx*/
+
+/* Responsive layout - makes a two column-layout */
+@media all and (max-width: 992px) {
+  /*ooo hebergement-populaire ooo*/
+  .colum-hebergement {
+    -ms-flex: 70%;
+    flex: 70%;
+    max-width: 70%;
+  }
+  
+  .colum-populaire {
+    -ms-flex: 30%;
+    flex: 30%;
+    max-width: 30%;
+  } 
+  /*xxx hebergement-populaire xxx*/
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media all and (max-width: 768px) {
+  /*ooo hebergement-populaire ooo*/
+  .row-hebergement-populaire {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    gap: 8px;
+   }
+  
+  .colum-hebergement {
+    -ms-flex: 100%; /* IE10 */
+    flex: 100%;
+    -ms-order: 2; /* IE10 */
+    order: 2;
+    max-width: 100%;
+  }
+  
+  .colum-populaire {
+    -ms-flex: 100%; /* IE10 */
+    flex: 100%;
+    -ms-order: 1; /* IE10 */
+    order: 1;
+    max-width: 100%;
+  }
+  /*xxx hebergement-populaire xxx*/
+}
+</style>
+<body>
+
+<!-- Photo Grid -->
+<div class="row-hebergement-populaire"> 
+  <div class="colum-hebergement">
+  	<section id="hebergement">
+    	<img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" style="width:100%; height:100%; object-fit:cover;">
+    </section>
+  </div>
+  <div class="colum-populaire">
+  	<aside id="populaire">
+    	<img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width:100%; height:100%; object-fit:cover;">
+    </aside>
+  </div>  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+/*oooo Start oooo*/ 
+/*xxxx End xxxx*/
+
+*, *:before, *:after {
+    -moz-box-sizing    : border-box; /* Firefox */
+    -webkit-box-sizing : border-box; /* Safari */
+    box-sizing         : border-box;
+    *behavior          : url(./js/boxsizing.htc); /* ie7 et ie8 */
+}
+
+/*oooo Color Chart oooo*/ 
+:root {
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --grey: #F2F2F2;
+    --big-font: 30px;
+    --margin-page: 0 5%;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.blue {
+    color: #0065FC;
+}
+
+.light-blue {
+    color: #DEEBFF
+}
+
+.grey {
+    color: #F2F2F2; 
+}
+/*xxxx Color Chart xxxx*/
+
+/*oooo Overall oooo*/ 
+body {
+    margin: 0;
+    font: 12px 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;       
+}
+
+body > * {
+    border: 1px solid transparent;
+}
+
+header, main, footer nav {
+    flex: 1 100%;
+    width: 1440px;
+    height: 1884px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+    
+footer {
+    background-color: var(--grey);
+}
+/*xxxx Overall xxxx*/
+
+/*oooo Header oooo*/ 
+header nav {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    width: 60px;
+    height: 28.69px;
+}
+
+header .menu {    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .menu a {
+    width: 162px;
+    height: 102px;
+    border-top: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu a:hover {
+    color: var(--blue);
+    border-top: 2px solid var(--blue);
+}
+/*xxxx Header xxxx*/
+
+/*oooo Main oooo*/ 
+.main-wrapper {
+    margin: 0 50px;
+}
+/*o title o*/
+main .title {
+    padding: 0; 
+    display: flex;  
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main .title h1 {
+    margin: 0;
+    font-size: 17px;    
+}
+
+main .title p {
+    margin: 5px 0;
+}
+/*x title x*/
+
+/*o formulaire o*/
+main form {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+main form i.fa-map-marker-alt {
+    width: 46px;
+    height: 45px;
+    padding: 18px;
+    background-color: var(--grey);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: 1px solid var(--grey);
+}
+
+input.p-holder {
+    width: 170px;
+    height: 45px;
+    padding-left: 10px;
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid transparent;
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+}
+
+input.search {
+    height: 45px;
+    color: #FFF;
+    padding: 15px 20px;
+    background-color: var(--blue);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid var(--blue);    
+    font-weight: bolder;
+}
+  
+  
+input::placeholder {
+    color: #000;
+    font-weight: bolder;
+}
+  
+.fa-search {
+    opacity: 0;
+}
+/*x formulaire x*/
+
+/*o filters o*/
+main div.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;   
+    margin: 20px 0; 
+}
+
+main div.filters div {
+    display: flex;
+    gap: 30px;
+}
+
+.filters p {
+    margin: 0;
+    font-weight: bold;    
+}
+
+.filters span {
+    font-weight: bold;    
+    margin: 0 12px;    
+}
+
+.fa-money-bill-wave, 
+.fa-child, 
+.fa-heart, 
+.fa-dog { 
+    width: 37px; 
+    height: 37px;
+    background: white;
+    border-radius: 50%;
+    color: var(--blue);
+    padding: 14px 0;
+    padding-right: 2px;
+}
+
+div.filters button  { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 40px;
+    background: #FFF;    
+    border-radius: 50px 50px 50px 50px;
+    border: 2px solid var(--light-blue);
+    padding: 0;
+           
+}
+
+button i.filter {
+  background: var(--light-blue);
+  color: var(--blue);
+  margin: 0;
+}
+/*x filters x*/
+
+/*o information o*/
+.fa-info {
+    display: flex;
+    align-items: center;
+    padding-right: 1px;
+    padding-left: 7px;
+    padding-bottom: 2px;
+    width: 20px; 
+    height: 20px;
+    border: 1px solid var(--light-blue);
+    border-radius: 50%;
+    color: var(--blue);
+}
+  
+  main div.information {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+  
+main div.information p {
+    margin-left: 5px;
+}
+/*o information o*/
+
+/*xxxx Main xxxx*/
