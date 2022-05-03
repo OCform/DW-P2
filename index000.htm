@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Abdi MIGAUD">
+    <meta name="description" content="Un outil de planification de vacances ! Le site de l'agence Booki permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/logo/Booki.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>   
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Booki</title>
+
+</head>
+<body>
+  <!--ooo Header ooo-->
+  <header>
+    <nav class="header-nav">
+      <a href="#default" class="logo"><img src="./images/logo/Booki@3x.png" alt="logo"></a>
+      <div class="header-right">
+        <a href="#hebergements">Hébergements</a>
+        <a href="#activites">Activités</a>
+      </div>
+    </nav>
+  </header>
+  <!--xxx Header xxx-->
+
+  <!--ooo Main ooo-->
+  <main>
+    <div class="main-wrapper">
+      <!--o title o-->
+      <div class="title">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <span><p>En plein centre ville ou en pleine nature</p></span>
+      </div>
+      <!--x title x-->
+      <!--o formulaire o-->        
+      <form class="form-search" action="#">                        
+        <i class="fa fa-map-marker-alt"></i>
+        <input class="p-holder" type="search" placeholder="Marseille, France" name="search">                                        
+        <input class="search" type="submit" value="Rechercher"><i class="fa fa-search"></i>
+      </form>
+      <!--x formulaire x-->
+      <!--o filters o-->
+      <div class="filters">
+        <p>Filtres</p>
+        <!-- Add font awesome icons Filters-->
+        <div class="mobile">
+          <button><i class="filter fa fa-money-bill-wave"></i><span>Économique</span></button>
+          <button><i class="filter fa fa-child"></i><span>Familial</span></button>
+        </div>            
+        <button><i class="filter fa fa-heart"></i><span>Romantique</span></button>
+        <button><i class="filter fa fa-dog"></i><span>Animaux autorisés</span></button>
+      </div>
+      <!--x filters x-->
+      <!--o information o-->
+      <div class="information">
+        <a href="#" class="fas fa-info"></a><span><p>Plus de 500 logements sont disponibles dans cette ville</p></span>
+      </div>
+      <!--x information x-->
+      <!--ooo Responsive Hebergements and Plus Populaires Columns ooo-->
+      <div class="row-1"> 
+        
+        <div class="column-1">
+        	<!-- Header Hebergements -->
+          <div class="header-hebergements">
+            <h2>Hébergements à Marseille</h2>      
+          </div>
+          
+          <div class="row-1-1">             
+            <div class="column-1-1">
+              <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width: 100%;height: 100%;object-fit:cover">
+              <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width: 100%;height: 100%;object-fit:cover">
+            </div>
+            
+            <div class="column-1-2">
+              <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width: 100%;height: 100%;object-fit:cover">
+              <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width: 100%;height: 100%;object-fit:cover">
+            </div>
+            
+            <div class="column-1-3">
+              <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width: 100%;height: 100%;object-fit:cover">
+              <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width: 100%;height: 100%;object-fit:cover">
+            </div>            
+          </div>
+        </div>
+        
+        <div class="column-2">
+          	<!-- Header Les Plus Populaires -->
+            <div class="header-populaires">
+              <h2>Les plus populaires</h2><i class="fas fa-chart-line"></i>      
+            </div>
+            
+        	  <div class="row-1-2">
+          	  <div class="column-2-2">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width: 100%;height: 100%;object-fit:cover">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width: 100%;height: 100%;object-fit:cover">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" style="width: 100%;height: 100%;object-fit:cover">              
+              </div>      
+            </div>            
+          </div>
+        
+      </div>        
+      <!--xxx Responsive Hebergements and Plus Populaires Columns xxx-->
+    </div>
+  </main>
+  <!--xxx Main xxx-->
+
+  <!--ooo Footer ooo-->
+  <footer></footer>
+  <!--xxx Footer xxx-->
+  
+</body>
+</html>
